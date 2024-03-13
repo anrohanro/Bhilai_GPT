@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, useTheme, makeStyles } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import { TextareaAutosize } from "@mui/material";
 import MuiDrawer from "@mui/material/Drawer";
@@ -16,14 +16,14 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
+import { FaMicrophone } from "react-icons/fa6";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
+import { BsFillSendFill } from "react-icons/bs";
 import HistoryIcon from "@mui/icons-material/History";
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import renderMessageContent from "./RenderMarkdown";
-// import TextareaAutosize from "react-textarea-autosize";
-import { FaRegCircleUser } from "react-icons/fa6";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MessageIcon from "@mui/icons-material/Message";
@@ -104,29 +104,33 @@ export default function MiniDrawer() {
   const [history, setHistory] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [socket, setSocket] = useState(null);
-  const [isSidebarShown, setIsSidebarShown] = useState(true);
-  const messageBuffer = useRef("");
   const messagesEndRef = useRef(null); // For smooth scrolling
   const inputValueRef = useRef(null); // For smooth scrolling
   const [isFocused, setIsFocused] = useState(false);
+  const [isListening, setIsListening] = useState(false);
+  const [themeType, setThemeType] = useState('light');
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
+  useEffect(() => {
+    setThemeType(() => { return prefersDarkMode ? 'dark' : 'light' });
+  }, [prefersDarkMode]);
 
   const Usertheme = React.useMemo(
     () =>
       createTheme({
         palette: {
-          mode: prefersDarkMode ? "dark" : "light",
+          mode: themeType,
           primary: {
             main: "#90caf9",
           },
         },
       }),
-    [prefersDarkMode]
+    [themeType]
   );
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    let ws = new WebSocket("ws://localhost:8080");
     setSocket(ws);
 
     ws.onmessage = (event) => {
@@ -134,18 +138,59 @@ export default function MiniDrawer() {
       // messageBuffer.current += newChunk;
 
       setMessages((prevMessages) => {
-        const lastMessage = prevMessages[prevMessages.length - 1];
+        const lastMessage = prevMessages[1][prevMessages[1].length - 1];
         let updatedMessages = [...prevMessages];
         if (lastMessage && lastMessage.sender === "server") {
           const updatedLastMessage = { ...lastMessage, content: lastMessage.content + newChunk };
-          updatedMessages = updatedMessages.slice(0, -1).concat(updatedLastMessage);
+          updatedMessages[1] = updatedMessages[1].slice(0, -1).concat(updatedLastMessage);
         } else {
-          updatedMessages.push({ content: newChunk, sender: "server" });
+          updatedMessages[1].push({ content: newChunk, sender: "server" });
         }
         return updatedMessages;
       });
     };
+    ws.onclose = function (event) {
+      if (event.wasClean) {
+        console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+      } else {
+        // e.g. server process killed or network down
+        // event.code is usually 1006 in this case
+        console.log('[close] Connection died');
+        reconnect();
+      }
+    };
 
+    function reconnect() {
+      let attempts = 0;
+      const maxAttempts = 120; // Maximum number of attempts (2 minutes)
+      const delay = 2000; // Delay between attempts (1 second)
+
+      const tryReconnect = () => {
+        if (attempts >= maxAttempts) {
+          console.log('[close] Maximum number of reconnection attempts reached');
+          return;
+        }
+
+        const ws = new WebSocket('ws://localhost:8080');
+        setSocket(ws);
+
+        ws.onopen = () => {
+          console.log('[open] Connection reestablished');
+        };
+
+        ws.onclose = (event) => {
+          if (event.wasClean) {
+            console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+          } else {
+            console.log('[close] Connection died');
+            attempts++;
+            setTimeout(tryReconnect, delay);
+          }
+        };
+      };
+
+      setTimeout(tryReconnect, delay);
+    }
     // Clean up the WebSocket connection on unmount
     return () => {
       if (socket) {
@@ -153,6 +198,7 @@ export default function MiniDrawer() {
       }
     };
   }, []);
+
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -166,26 +212,61 @@ export default function MiniDrawer() {
     if (socket && inputValue.trim() !== "") {
       const message = {
         content: inputValue,
-        timestamp: new Date().toISOString(),
         sender: "user",
       };
-
-      setMessages((prevMessages) => [...prevMessages, message]);
+      if (messages.length === 0) {
+        const id = new Date().toISOString();
+        setMessages([id, [message]]);
+      }
+      else {
+        messages[1].push(message);
+      }
       setInputValue("");
       socket.send(inputValue);
     }
   };
 
+  const handleMicrophoneClick = () => {
+    if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+
+      recognition.onstart = () => {
+        setIsListening(true);
+      };
+
+      recognition.onresult = (event) => {
+        const transcript = Array.from(event.results)
+          .map(result => result[0])
+          .map(result => result.transcript)
+          .join('');
+        setInputValue(transcript);
+        setIsListening(false);
+      };
+
+      recognition.onend = () => {
+        setIsListening(false);
+      };
+
+      recognition.start();
+    } else {
+      alert('Your browser does not support speech recognition.');
+    }
+  };
+  const handleThemeChange = () => {
+    setThemeType(themeType === 'light' ? 'dark' : 'light');
+  };
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-}, [messages]);
+  }, [messages]);
 
   return (
     <ThemeProvider theme={Usertheme}>
       <Box
         sx={{
           display: "flex ",
-          overflowY: "auto",          
+          overflowY: "auto",
         }}
         className="custom-scrollbar"
       >
@@ -246,8 +327,18 @@ export default function MiniDrawer() {
             <ListItem key={1} disablePadding sx={{ display: "block" }}>
               <ListItemButton
                 onClick={() => {
-                  setHistory([...history, ...messages]);
-                  setMessages([]);
+                  if (messages.length < 1)
+                    return;
+                  const historyId = history.length > 0 ? history.map(item => item[0]) : [];
+                  if (historyId.includes(messages[0])) {
+                    const index = history.indexOf(messages[0]);
+                    history[index] = messages;
+                    setMessages([]);
+                  }
+                  else {
+                    history.push(messages);
+                    setMessages([]);
+                  }
                 }}
                 title="New Chat"
                 sx={{
@@ -274,7 +365,7 @@ export default function MiniDrawer() {
             <ListItem key={2} disablePadding sx={{ display: "block" }}>
               <ListItemButton
                 onClick={() => {
-                  if (history.length !== 0) setMessages(history);
+                  setOpen(!open);
                 }}
                 title="History"
                 sx={{
@@ -297,32 +388,65 @@ export default function MiniDrawer() {
                   sx={{ opacity: open ? 1 : 0 }}
                 />
               </ListItemButton>
+              <Box className={`${!open ? "hidden" : ""} ml-6 mr-6  overflow-y-auto custom-scrollbar max-h-32`}>
+                <List className="m-auto space-y-2">
+                  {history.length > 0 && history.map((chat, index) => (
+                    <ListItem key={chat[0]} disablePadding sx={{ display: "block" }} className={`p-1 rounded-md hover:bg-slate-500 hover:cursor-pointer overflow-hidden text-ellipsis
+                    ${chat[0] === messages[0] ? "bg-slate-500" : ""}
+                    `}
+                      onClick={() => {
+                        if (messages.length < 1) {
+                          // Set messages to clicked item messages
+                          setMessages(chat);
+                          return;
+                        }
+                        const currentId = messages.length > 0 ? messages[0] : "";
+                        const historyId = history.length > 0 ? history.map(item => item[0]) : [];
+
+                        if (historyId.includes(currentId)) {
+                          // Set messages to clicked item messages
+                          setMessages(chat);
+                        } else {
+                          // Add messages to history
+                          history.push(messages);
+                          setMessages(chat);
+                        }
+                      }
+                      }
+                    >
+                      {chat[1][0].content}
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
             </ListItem>
+
           </List>
           <Divider />
           <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem key={text} disablePadding sx={{ display: "block" }}>
-                <ListItemButton
+
+            <ListItem key={1} disablePadding sx={{ display: "block" }}>
+              <ListItemButton onClick={handleThemeChange} title="Change Theme"
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? "initial" : "center",
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
                   sx={{
-                    minHeight: 48,
-                    justifyContent: open ? "initial" : "center",
-                    px: 2.5,
+                    minWidth: 0,
+                    mr: open ? 3 : "auto",
+                    justifyContent: "center",
                   }}
                 >
-                  <ListItemIcon
-                    sx={{
-                      minWidth: 0,
-                      mr: open ? 3 : "auto",
-                      justifyContent: "center",
-                    }}
-                  >
-                    {index % 2 === 0 ? <InboxIcon /> : <HistoryIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-                </ListItemButton>
-              </ListItem>
-            ))}
+                  <IconButton >
+                    {themeType === 'dark' ? <DarkModeIcon /> : <LightModeIcon />}
+                  </IconButton>
+                </ListItemIcon>
+                <ListItemText primary={themeType === 'light' ? 'Light Mode' : 'Dark Mode'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
           </List>
         </Drawer>
         {/* <Box
@@ -354,7 +478,7 @@ export default function MiniDrawer() {
             </Box>
           ) : (
             <List className="flex flex-col gap-2 text-wrap w-full pb-16">
-              {messages.map((message, index) => (
+              {messages[1].map((message, index) => (
                 <ListItem
                   sx={{
                     display: "flex",
@@ -374,10 +498,10 @@ export default function MiniDrawer() {
                   )}
                   <Box
                     sx={{ wordBreak: "break-word", textWrap: "wrap" }}
-                    key={index}                    
+                    key={index}
                     className={`p-2 rounded-lg font-google-sans break-words
                              ${message.sender === "user"
-                        ? "bg-blue-500 text-white dark:bg-blue-700 max-w-fit"
+                        ? "bg-blue-500 text-white dark:bg-blue-500 max-w-fit"
                         : "dark:text-white max-w-full"
                       }`}
                   >
@@ -390,7 +514,7 @@ export default function MiniDrawer() {
                     </Avatar>
                   )}
                 </ListItem>
-              ))}             
+              ))}
               <Box ref={messagesEndRef} /> {/* Reference for scrolling */}
             </List>
           )}
@@ -406,34 +530,44 @@ export default function MiniDrawer() {
           }}
           className="flex justify-center items-center py-2"
         >
-          <TextareaAutosize
-            ref={inputValueRef}
-            placeholder="Enter your message..."
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage();
-              } else if (e.key === "Enter" && e.shiftKey) {
-                e.preventDefault();
-                const currentValue = e.target.value + "\n";
-                setInputValue(currentValue);
-                if (inputValueRef.current) {
-                  inputValueRef.current.scrollIntoView(false, {
-                    behavior: "smooth",
-                  });
+          <Box className={`flex w-full max-w-screen-md rounded-3xl ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
+            }shadow-gray-400 dark:bg-gray-700 dark:text-white dark:border-gray-600`}>
+            <TextareaAutosize
+              ref={inputValueRef}
+              placeholder="Enter your message..."
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  sendMessage();
+                } else if (e.key === "Enter" && e.shiftKey) {
+                  e.preventDefault();
+                  const currentValue = e.target.value + "\n";
+                  setInputValue(currentValue);
+                  if (inputValueRef.current) {
+                    inputValueRef.current.scrollIntoView(false, {
+                      behavior: "smooth",
+                    });
+                  }
                 }
-              }
-            }}
-            minRows={1}
-            maxRows={isFocused ? 6 : 1}
-            onFocus={() => setIsFocused(true)} // Set isFocused to true when the textarea is focused
-            onBlur={() => setIsFocused(false)} // Set isFocused to false when the textarea loses focus
-            wrap="soft"
-            className={`flex-grow resize-none px-4 py-4 mr-2 border custom-scrollbar border-gray-300 ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
-              } focus:outline-none w-full max-w-screen-md shadow-xl shadow-gray-400 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:placeholder-gray-400 transition duration-300`}
-          />
+              }}
+              minRows={1}
+              maxRows={isFocused ? 6 : 1}
+              onFocus={() => setIsFocused(true)} // Set isFocused to true when the textarea is focused
+              onBlur={() => setIsFocused(false)} // Set isFocused to false when the textarea loses focus
+              wrap="soft"
+              className={`flex-grow resize-none px-4 py-4 
+               custom-scrollbar  bg-inherit ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
+                }
+              outline-none focus:outline-none w-full dark:text-white dark:border-gray-600 dark:placeholder-gray-400 transition duration-300`}
+            />
+            <Box className={`flex  items-end pb-4 pl-1 pr-3 space-x-4 bg-inherit ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
+              }`} >
+              <FaMicrophone onClick={handleMicrophoneClick} className="h-6 w-6 hover:cursor-pointer hover:text-green-600 dark:text-white text-black" color={isListening ? 'red' : ''} />
+              <BsFillSendFill onClick={sendMessage} className="h-6 w-6  dark:text-white text-black hover:cursor-pointer hover:text-green-600" />
+            </Box>
+          </Box>
         </Box>
       </Box>
       {/* </Box> */}
