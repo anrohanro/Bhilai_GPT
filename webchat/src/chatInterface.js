@@ -29,6 +29,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MessageIcon from "@mui/icons-material/Message";
 import PersonIcon from "@mui/icons-material/Person";
 import Avatar from "@mui/material/Avatar";
+import io from 'socket.io-client';
+
 
 const drawerWidth = 240;
 
@@ -130,11 +132,11 @@ export default function MiniDrawer() {
   );
 
   useEffect(() => {
-    let ws = new WebSocket("ws://localhost:8080");
+    let ws = io('http://localhost:5000');
     setSocket(ws);
 
-    ws.onmessage = (event) => {
-      const newChunk = event.data;
+    ws.on('response', (data) => {
+      const newChunk = data.message;
       // messageBuffer.current += newChunk;
 
       setMessages((prevMessages) => {
@@ -148,49 +150,49 @@ export default function MiniDrawer() {
         }
         return updatedMessages;
       });
-    };
-    ws.onclose = function (event) {
-      if (event.wasClean) {
-        console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-      } else {
-        // e.g. server process killed or network down
-        // event.code is usually 1006 in this case
-        console.log('[close] Connection died');
-        reconnect();
-      }
-    };
+    });
+    // ws.onclose = function (event) {
+    //   if (event.wasClean) {
+    //     console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    //   } else {
+    //     // e.g. server process killed or network down
+    //     // event.code is usually 1006 in this case
+    //     console.log('[close] Connection died');
+    //     reconnect();
+    //   }
+    // };
 
-    function reconnect() {
-      let attempts = 0;
-      const maxAttempts = 120; // Maximum number of attempts (2 minutes)
-      const delay = 2000; // Delay between attempts (1 second)
+    // function reconnect() {
+    //   let attempts = 0;
+    //   const maxAttempts = 120; // Maximum number of attempts (2 minutes)
+    //   const delay = 2000; // Delay between attempts (1 second)
 
-      const tryReconnect = () => {
-        if (attempts >= maxAttempts) {
-          console.log('[close] Maximum number of reconnection attempts reached');
-          return;
-        }
+    //   const tryReconnect = () => {
+    //     if (attempts >= maxAttempts) {
+    //       console.log('[close] Maximum number of reconnection attempts reached');
+    //       return;
+    //     }
 
-        const ws = new WebSocket('ws://localhost:8080');
-        setSocket(ws);
+    //     const ws = new WebSocket('ws://localhost:5000');
+    //     setSocket(ws);
 
-        ws.onopen = () => {
-          console.log('[open] Connection reestablished');
-        };
+    //     ws.onopen = () => {
+    //       console.log('[open] Connection reestablished');
+    //     };
 
-        ws.onclose = (event) => {
-          if (event.wasClean) {
-            console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-          } else {
-            console.log('[close] Connection died');
-            attempts++;
-            setTimeout(tryReconnect, delay);
-          }
-        };
-      };
+    //     ws.onclose = (event) => {
+    //       if (event.wasClean) {
+    //         console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+    //       } else {
+    //         console.log('[close] Connection died');
+    //         attempts++;
+    //         setTimeout(tryReconnect, delay);
+    //       }
+    //     };
+    //   };
 
-      setTimeout(tryReconnect, delay);
-    }
+    //   setTimeout(tryReconnect, delay);
+    // }
     // Clean up the WebSocket connection on unmount
     return () => {
       if (socket) {
@@ -222,7 +224,7 @@ export default function MiniDrawer() {
         messages[1].push(message);
       }
       setInputValue("");
-      socket.send(inputValue);
+      socket.emit('message', inputValue);
     }
   };
 
