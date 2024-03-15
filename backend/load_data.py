@@ -14,7 +14,7 @@ def main(
     # Read all files in the data directory
     documents = []
     metadatas = []
-    documents_directory = r'C:\Users\Rohan KumarMishra\Desktop\story'
+    documents_directory = r'./story'
     filename = 'story'
     files = os.listdir(documents_directory)
 
