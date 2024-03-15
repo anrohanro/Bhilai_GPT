@@ -1,0 +1,583 @@
+You are an BhilaiGPT designed to provide informative responses to student's queries regarding thier institute IIT Bhilai course of study and other rules and regulations. Your goal is to generate concise and relevant answers using context provided don't use any extra knowledge of yours .Only use the context information to answer the question. Do not use anything else        
+ 	 
+Undergraduate 
+A first-level degree program offered by the Institute. 
+Postgraduate 
+Degree programs offered by the Institute beyond the first-level.  
+Academic Program aka Program 
+The degree programs offered by the Institute, including undergraduate, postgraduate and research programs. 
+Academic Senate aka Senate 
+The Institute authority responsible for the promotion and maintenance of standards of research, instruction, education and examination. The senate carries out all decision making towards the academic and related activities. 
+Academic Year 
+An academic year starts in the month of July each calendar year and ends in the month of June of the next calendar year. 
+Semester 
+A division of an academic year (July-June), which comprises of three semesters - 2 regular semesters (Monsoon and Winter) and a Summer semester. 
+Monsoon Semester 
+A semester normally starting in the fourth week of July and continuing until the first week of December. 
+Winter Semester 
+A semester normally starting in the fourth week of December and continuing until the first week of May of the next calendar year. 
+Summer Semester 
+A semester normally starting in the second week of May and continuing until the second week of July. 
+DOAA 
+Dean of Academic Affairs. 
+DOSA 
+Dean of Students' Affairs. 
+IPGC 
+Institute Post-Graduate Committee responsible for implementing Institute policies related to postgraduate programs.  
+IUGC 
+Institute Under-Graduate Committee responsible for implementing Institute policies related to undergraduate programs.  
+Department 
+Department is an administrative unit having one or more disciplines 
+Discipline 
+Discipline is an academic unit offering two or more programs (undergraduate &/or postgraduate programs) 
+DUGC 
+Discipline Undergraduate Committee. 
+DPGC 
+Discipline Postgraduate Committee. 
+Grade 
+A letter system to indicate the performance of the students. Grades are awarded by the instructor in-charge of the course/thesis for the student. Each grade carries associated numeric points. 
+CGPA 
+Cumulative Grade Point Average. A weighted average of numeric points obtained in the courses cleared by a student. 
+SGPA 
+Semester Grade Point Average. A weighted average of numeric points obtained in the courses within a semester cleared by a student. 
+Students Senate 
+A students' body to interface with the academic matters pertaining to the students' governance  
+Credit 
+The numeric value associated with courses to indicate the load for a course. 
+2. Scope 
+The provisions of this handbook are applicable to students admitted till 2022-23-W semester in all programs and disciplines. The academic senate on the recommendation of the Dean of Academic Affairs may change any or all parts of this handbook at any time. 
+3. Introduction 
+IIT Bhilai offers a semester-oriented undergraduate, postgraduate and research programs with an objective of imparting best quality science and engineering education. Admissions to the academic programs are synchronized with an academic year, though in some cases, it may be synchronized to the start of a semester. An academic year starts in the month of July each calendar year and ends in the month of June of the next calendar year. Each academic year is divided into three semesters - Monsoon, Winter and Summer semesters. The Monsoon and Winter semesters are two regular semesters. The Summer semester is a shorter semester and only applicable for BTech and MSc programs. IIT Bhilai is currently offering Bachelor of Technology (BTech), Master of Science (MSc), Master of Technology (MTech) and Doctor of Philosophy (PhD) programs in various disciplines. The medium of instruction in both theory and practical classes of the BTech, MSc, MTech and PhD programs is English. 
+4. Academic Administration 
+The Academic Senate is a statutory and supreme body that governs all academic matters of the Institute, and the rulings of Senate Chairman of the Institute are final in regard to all academic issues. A definite time schedule is set by the Senate for various academic activities, through an Academic Calendar issued in the beginning of each academic year. Dean of Academic Affairs (DOAA) is champion of all academic Programs. All the academic matters come under the purview of IPGC / IUGC at the institute level and DPGC / DUGC at the department level. Matters pertaining to conduct, discipline and welfare of the students are overseen by the Dean of Students' Affairs. 
+Dean of Academic Affairs (DOAA) 
+The office of the Dean of Academic Affairs (DOAA) is responsible for the implementation of the decisions taken on academic matters by the Senate. 
+  DOAA receives, processes and maintains all records related to all academic programs including curricula, courses offered, academic calendar, registration, leave, examinations, grades and award of degrees. 
+  DOAA acts as a central node of academic activities related communication. 
+  DOAA disseminates information pertaining to all academic matters. 
+  DOAA ensures the conduct of all programs including the formulation of rules and ensuring the adherence of such rules. 
+  DOAA conducts the process of the admission of undergraduate students, postgraduate students. 
+  DOAA chairs the meetings of the Institute Undergraduate Committee (IUGC) and Institute Postgraduate Committee (IPGC) and ensures the smooth conduct of the meetings of such committees. 
+Institute Postgraduate Committee (IPGC) 
+Institute postgraduate committee (IPGC) ensures the smooth conduct of the academic matters for the postgraduate programs of the Institute. The IPGC has the following composition. 
+1. Dean of Academic Affairs (Ex-officio Chairman) 
+2. Conveners of DPGC of all departments offering postgraduate programs: Members 
+3. Two nominees of the Academic Senate: Members 
+4. Two representatives of Students Senate (from the postgraduate programs): Invited Members 
+Institute Undergraduate Committee (IUGC) 
+Institute undergraduate committee (IUGC) ensures the smooth conduct of the academic matters for the undergraduate programs of the Institute. The IUGC has the following composition. 
+1. Dean of Academic Affairs (Ex-officio Chairman) 
+2. Conveners of DUGC of all departments offering undergraduate programs: Members 
+3. Two nominees of the Academic Senate: Members 
+4. Two representatives of Students Senate (from the undergraduate programs): Invited Members 
+Discipline Postgraduate Committee (DPGC) 
+Head of every academic discipline offering a postgraduate program constitutes its DPGC nominally in the month of October once every two years with the following composition. 
+A. One faculty member: (Convener) 
+B. One faculty member: Member 
+C. One discipline student representative: Invited Member 
+The role of the DPGC is to manage postgraduate academic programs of the department as per the rules of the Institute. Students may approach DPGC for advice about curriculum, academic opportunities, for permissions to proceed on leave or for any other academic issue. 
+DPGC assigns the duties of teaching assistants, research assistants and other academic duties to the postgraduate students. 
+Discipline Undergraduate Committee (DUGC) 
+Head of every academic discipline offering an undergraduate program constitutes its DUGC nominally in the month of October once every two years with the following composition. 
+A. One faculty member: (Convener) 
+B. One faculty member: Member 
+C. One discipline student representative: Invited Member 
+The role of the DUGC is to manage undergraduate academic programs of the department as per the rules of the Institute. Students may approach DUGC for advice about curriculum, academic opportunities, for permissions to proceed on leave or for any other academic issue. 
+5. Academic Programs 
+IIT Bhilai fosters and encourages students to excel in their programs of study and recognizes the same in several ways. It follows credit based system of education. Under this system, a student needs to complete the credit requirements for the courses. There is a prescribed nominal duration of the program while the students may complete in lesser time or may invest more time to move to the next higher level of system. 
+IIT Bhilai offers the following programs. 
+1. BTech: The nominal Bachelor of Technology degree wherein a student is admitted as per the admission process. 
+2. BTech (Honours): The enhanced Bachelor of Technology degree wherein a student admitted to a BTech program may choose to carry out additional courses/project in his/her own discipline or another discipline. BTech (Honours) is a program where students are not admitted initially but may opt to convert their BTech program. 
+3. MSc: The Master of Science degree program offered by Departments of Physics, Chemistry and Mathematics wherein a student is admitted as per the admission process. 
+4. MTech: The nominal Master of Technology degree program wherein a student is admitted as per the admission process. A BTech student may also opt to convert his program to MTech program. If the conversion is permitted by the Institute, the student shall get two degrees after successful completion of MTech program requirements. 
+5. PhD: The nominal doctoral program wherein a student is admitted as per the admission process. A student of an MTech or MSc program, shall also be eligible for conversion to the PhD program. If the conversion is permitted by the Institute, the student shall get PhD degree as well as MTech or MSc degree after successful completion of program requirements. A student of BTech program whose program is converted to MTech program will also be eligible for conversion to PhD program. 
+The admissions are carried out in Bachelor of Technology (BTech) program, Masters of Science (MSc) program, Masters of Technology (MTech) program and Doctorate (PhD) program. The discipline-wise program offerings are presented in the following table.  
+Chemistry (CY)
+BTech, MSc, MTech, PhD
+Computer Science and Engineering (CS)
+BTech, MSc, MTech, PhD
+Data Science and Artificial Intelligence (CS)
+BTech, MSc, MTech, PhD
+Electric Vehicle Technology (EE)
+BTech, MSc, MTech, PhD
+Electrical Engineering (EE)
+BTech, MSc, MTech, PhD
+Liberal Arts
+BTech, MSc, MTech, PhD
+Mathematics (MA)
+BTech, MSc, MTech, PhD
+Mechanical Engineering (ME)
+BTech, MSc, MTech, PhD
+Mechatronics Engineering (EE & ME)
+BTech, MSc, MTech, PhD
+Physics
+BTech, MSc, MTech, PhD
+6. Academic Year and Semesters 
+An Academic Year starts in the month of July of a calendar year and ends in the month of June of the next calendar year. The academic year (July-June) consists of 2 regular semesters - Monsoon (Nominal Duration: July fourth week to December first week) and Winter (Nominal Duration: December fourth week to the first week of May of next calendar year) and a Summer semester (Nominal duration: May second week to July second week). 
+Each of the two regular semesters are of about seventeen weeks duration including about one week of mid-semester recess. Further about 10 working days of each of the regular semester are used for mid-semester and end-semester examinations. 
+The Summer semester consists of about eight teaching weeks and has no recess. 
+The semesters are represented as YYYY-YY-# (e.g. 2016-17-W) which provides the academic year (start calendar year in YYYY format and end calendar year in YY format) and the semester indicator (M: Monsoon, W: Winter and S: Summer). 
+7. Academic Calendar 
+The Senate-approved schedule of academic activities in an academic year, inclusive of dates for registration, examinations, mid-semester breaks etc., shall be laid down in the Academic Calendar for the academic year. The academic calendar shall be published on the Institute website. 
+8. Admissions  
+1. Admissions to BTech program in all disciplines offered by the Institute shall be made through Joint Entrance Examination (Advanced). The admission shall be made in the Monsoon semester of each academic year. 
+2. Admission to MSc program in all disciplines offered by the Institute shall be made through Joint Admission Test for MSc (JAM). The admission shall be made in the Monsoon semester of each academic year. 
+3. Admission to MTech and PhD programs in all disciplines offered by the Institute will normally be made in the Monsoon Semester of each academic year. Institute may also offer admission to such programs in the Winter Semesters. Each department offering such admissions will declare admission procedure as per the academic calendar.  
+4. Students seeking admission to MTech and PhD program may be under non-Institute Fellowship program as sponsored students. The status of such postgraduate students may be under part-time, full-time, part-time external or full-time external and may change during the conduct of the program.  
+5. All students shall be required to pay prevalent tuition and other fees as prescribed by the Institute at the time of joining and also in subsequent regular and summer semesters as long as they are on roll of the Institute. After the nominal duration of the program, current fee of the program at that time will be applicable. 
+6. IIT Bhilai may also offer courses to non-degree (exchange) students. A non-degree student is a student who is registered for a degree in a recognized Institute (other than IIT Bhilai) or a University in India or abroad, and who is officially sponsored by that Institute or University to complete a part of her/his academic program at IIT Bhilai. The non-degree student may carry out research, take courses for credit or otherwise, or may use other academic facilities at IIT Bhilai. An official transcript of work done at IIT Bhilai, along with grades obtained, if any, would be given to the non-degree student. However, any credits earned at the Institute, by a non-degree student, cannot be counted towards any degree program of IIT Bhilai at any time. 
+A person will be admitted as a non-degree student on the basis of an application to the Dean of Academic Affairs, who will recommend for such admissions along with the recommendations of the concerned DUGC/DPGC for the approval of the Chairperson 
+Senate. The Chairperson's decision will be final in this regard. An exchange student 
+may be admitted for a maximum period of one year only. The strength of non-degree students in any program shall not exceed 10% of the approved strength of the program in the corresponding discipline. At any given time, non-degree students from an institute shall not exceed 5% (with a minimum number of 1 student) of the approved strength of the program in the corresponding discipline. 
+A non-degree student will be required to pay all applicable fees depending upon the status, program and nationality. Students so admitted will be governed by all conduct rules and regulations of IIT Bhilai. 
+7. The Institute reserves the right to cancel the admission of any student and ask him/her to discontinue his/her studies at any stage of his/her career on grounds of indiscipline or inadequate academic performance. 
+8. A student admitted to PhD program who has earned credits being in the similar program elsewhere may apply for those credits to be counted towards credit requirements at IIT Bhilai. The student shall apply to DOAA through DPGC giving all the relevant details. 
+The decision of the Institute in this regard shall be final. 
+Validity of Admission and Its Cancellation 
+All students admitted provisionally or otherwise to any program shall submit copies of their mark-sheets, provisional certificates, etc. of the qualifying examination and other documents by the last date specified for the purpose in the Academic Calendar. All provisional admissions shall be canceled and the program shall be deemed terminated if the student fails to submit the necessary document by the specified date. The Senate may cancel admission at any later time if it is found that the student had supplied false information or suppressed relevant information while seeking admission. 
+Withdrawal from Admission 
+The Senate may grant permission to withdraw from a Program or from the additional part of a Program upon the recommendations of the department, DUGC/DPGC and IUGC/IPGC. 
+9. Change of Discipline 
+  A postgraduate student shall not be permitted to move from the discipline to which he/she is admitted to another. 
+  An undergraduate student may request for change of discipline from the one in which he/she is admitted to another one. Such changes may only be requested at the end of the first semester of the program through DOAA. 
+  Only those undergraduate students who were admitted through Joint Entrance Examination procedures shall be permitted change of discipline provided they meet other conditions. 
+  For the grant of change of discipline, the consideration of academic performance shall purely be SGPA and the grades in the courses undertaken in the Monsoon semester of the first year. 
+  The Institute shall ensure that by change of discipline, the enrolled capacity of any discipline shall not reduce more than 20% and the total number of students shall not exceed 110% of the allotted capacity of any discipline. 
+  In case of a tie, the grade distribution will be used to break the tie. A student with more high grades will be given preference over another tied student with fewer high grades. 
+  Once the new discipline is allotted, there is no possibility of further change either to a new discipline or going back to the original discipline. 
+10. Change of Program or Nature of Program 
+A student registered in a program may apply to change to the higher program at an appropriate time in the program. Such applications will be evaluated by the admission committee of the department and permitted by the Institute. The student may be required to take a written test and/or appear for an interview. 
+A student registered in sponsored category of postgraduate program (Part-time, Full-time, Part-time external or Full-time external) may apply to DOAA through DPGC to change of the nature of his/her registration within the sponsored category. There shall be no migration permitted to move from Sponsored category to Institute Fellowship program for the postgraduate students. 
+11. Registration 
+All students are required to register for the prescribed credits in each of the regular semester, i.e. Monsoon and Winter semesters unless he/she is on authorized leave from the Institute. 
+Such registrations as necessary are required to be done by the students before the commencement of the semesters to study during that period in the Institute as per the Academic calendar of the Institute. The registration shall be carried out in two parts - academic registration and administrative registration. The responsibility for completing both parts of this process rests with the students. If a student fails to complete the registration process within the specified time, he/she shall be deemed to be on unauthorized absence from the Institute and suitable disciplinary action including the termination of the studentship shall be carried out by the Institute. 
+Academic Pre-registration 
+  All students must pre-register for the courses scheduled to be taken in the next semester as per schedule specified in the Academic Calendar. 
+  It will be the responsibility of the students to ensure that they meet the eligibility criteria, pre-requisite criteria if any. Students may only register for the number of courses as permitted by semester load rules and must also ensure that there are no timetable clashes amongst the courses. The students shall need to submit the fully filled registration form along with the permissions from the instructors if needed for the approval of the DPGC/DUGC. 
+  If a student is unable to pre-register during the specified period for reasons such as being on leave, the student shall be permitted to do the academic registration at the specified time at the beginning of the semester. 
+Academic Registration 
+  The following category of students shall be required to make academic registration in the start of the semester as per the schedule given in the academic calendar of the Institute. 
+a. All new students. 
+b. All those students who could not do their pre-registration for legitimate reasons such as being on approved leave. 
+c. All those students who received F grade in any of the courses done in the previous semester (after conversion of FS and I grades). 
+  All continuing students who do not register as per the schedule without appropriate permissions shall be liable for imposition of fines as per the rules of the Institute. 
+  All new students who for any valid reason arrive later than the stipulated date for registration must obtain prior permission from Dean of Academic Affairs. They shall be treated as non-reporting students if they fail to do so. 
+Administrative Registration 
+  All students must pay for all dues, including the hostel dues, academic fees, any other dues that the Institute may prescribe from time to time etc. during the administrative registration. 
+  All students whose ID card expires must get it renewed as per the norms of the 
+Institute. 
+  All students must carry out registration of facilities such as various labs, library etc. as specified by the Institute during the administrative registration. 
+  Any failure to do the administrative registration as per the stipulated time table shall attract penalty, disciplinary action and/or termination of the program. 
+  A doctorate student who has submitted the thesis and is waiting for defense shall register for zero credits if he/she wishes to stay on campus. The student shall pay all the relevant fee except for tuition fee. 
+Registration in Summer Semester 
+1. Undergraduate students shall not be required to stay on campus during Summer semester. 
+2. Institute may offer regular courses in the Summer semester and those undergraduate students desirous of taking such courses may register for the Summer semester. Such students who would be registering for the course offered in the Summer semester shall not be permitted to register for more than 15 credits. 
+Postgraduate (MTech and PhD) students shall be required to stay on campus during intersemester break without additional registration. They shall work on their research under the thesis supervisor(s) and fulfill their other duties as assigned by the department or institute. They can avail vacation leave as per the norms during the inter-semester and intra-semester break periods. 
+Add-Drop of Courses 
+  Students may add or drop courses using the registration system one week from the start of the regular semester (Monsoon or Winter semesters). 
+  Each course add/drop request needs to be accepted by the concerned course instructor and approved by the DUGC/DPGC. 
+  Dropping of course(s) which shall result in under loading of the course credits shall not be permitted by the DUGC/DPGC. 
+  No course can be added after registration for the Summer semester. 
+12. Residential Requirements 
+The Institute is essentially a residential one and every student shall reside in the assigned accommodation within the Institute unless otherwise exempted/permitted. The Institute shall provide bachelor's accommodation to all the students. Residents are expected to follow the rules of accommodation in their respective residences. Gist of certain relevant rules related to the residential accommodation are reproduced here. 
+  No married accommodation shall be provided to any student of the BTech, MSc and MTech programs. Married PhD students having provision of HRA in fellowship/stipend may get separate accommodation subject to availability. 
+  No student shall come into or give up the assigned accommodation without prior permission of the warden. 
+  Students shall be required to make their rooms available whenever required for inspection or maintenance and shall vacate the rooms when leaving for the vacations/holidays. 
+  Students shall be responsible for the proper care of the rooms in particular and hostels in general. 
+  Students shall be responsible for the safe keeping of their own property. The Institute shall accept no responsibility and shall not be liable for any compensation. 
+  Engaging personal attendants, keeping pets and use of personal appliances like electric heater, refrigerators etc. by students are strictly prohibited. 
+  All students must abide by the rules and regulations related to the accommodation as may be applicable from time to time. Detailed rules and regulations can be found in the hostel manual and circular/guidelines shared time to time by the concerned authorities. 
+13. Attendance 
+  Attendance in all classes is compulsory and it is the responsibility of the student to maintain the attendance. Students must also fulfill their assigned duties in the institute. 
+  Students may take leave by applying through faculty member in-charge of those courses/labs where the student is assigned the responsibility to assist in teaching/labs management, supervisor and DPGC convener. The leave shall be approved as per the rules by the DPGC/DUGC convener after permissions are given by all stakeholders. 
+  If a student plans to leave the campus, he/she must also provide address during the leave. 
+  Before proceeding on medical leave, the institute doctor and DUGC/DPGC conveners must be informed. Before rejoining the institute, the student should obtain a fitness certificate from the institute doctor and submit it to DPGC/DUGC conveners. 
+  Postgraduate students shall be required to mark their attendance daily (twice) in their respective departments or designated places by the Institute. 
+14. Leave of Absence 
+  Normally the leave shall be discouraged for those students doing the course work during the semester. 
+  Undergraduate students shall be allowed to be on leave from the institute during the intra-semester breaks and inter-semester breaks as announced in the Academic Calendar. They shall require specific permissions to stay in the campus during that time. 
+  Postgraduate students shall be required to take appropriate leave of absence prior to leaving from the campus. 
+  Postgraduate students shall be permitted vacation leave of up to 30 days in an academic year during the inter-semester and intra-semester breaks. They shall be permitted to suffix or prefix Institute holidays to such vacation leave. 
+  Postgraduate students shall also be permitted casual leave of up to 8 days during the year with the permission to suffix Institute holidays to such leaves. 
+  No student shall be allowed more than 9 days of absence from the Institute (including prefix or suffix of the Institute holidays) if part of the duration of absence falls outside of inter-semester or intra-semester break. 
+  A female student shall be granted maternity leave as per the government rules. 
+  Absence without sanctioned leave may result in the termination of the student's program. Absence without sanctioned leave may also entail loss of financial assistantship/scholarship for the period of absence or the duration decided by the competent authority. 
+  A doctorate student who has submitted the thesis and is waiting for defense shall be permitted to go on leave and stay off-campus if he/she so desires. Such a student shall pay no fee. 
+Academic Work Outside IIT Bhilai 
+A student may be permitted to proceed to another academic or research organization or to an industry for carrying out research with if it is in the interest of the research. The student shall apply at least two weeks before the date of travel for permission. The application shall be made to DOAA through supervisor and DPGC convener. 
+15. Conduct of Students 
+  Students shall follow the conduct rules and exhibit an exemplary behavior of a model citizen of the nation. 
+  Students shall also follow the rules of accommodation and must ensure that conducts which are in violation of such rules are reported immediately to appropriate authorities. 
+16. Course Structure and Grading System 
+Category of Courses 
+There are five categories of courses 
+  Core courses: A program may specify a set of courses that every student of that program must register for and must clear. 
+  Professional core courses: A department may specify discipline-wise a set of courses for each programs that every student of specific discipline in the program must register for and must clear. 
+  Departmental elective courses: A bouquet of courses offered by the department out of which the students must choose to register in order to fulfil the requirements of the discipline in the program and must clear. Department may also declare some specific courses offered by other departments a-priori as departmental elective courses. Departments shall specify the total number of credits that should be cleared with departmental elective courses. 
+  Open elective courses: A bouquet of courses offered by various departments of the institute which the students must choose to register from his/her own department or from any other department and clear. A department will allocate zero or more slots for open electives in each program discipline-wise. Open electives are meant to widen the knowledge beyond the parent discipline and broaden the horizon by exposing the problems/areas in other disciplines. Departments shall specify the credits that should be cleared with open elective courses. 
+  Creative Art and Liberal Art courses: The Institute believes in a well-rounded development of its students. To that extent, Institute specifies program-wise credits to be earned by students amongst a bouquet of courses in Creative Arts and Liberal Arts. 
+  A student shall not be permitted to do a course more than once and use their credits towards the fulfilment of the requirements of the program. 
+  Those students desirous to earn extra knowledge of subjects can be permitted by the course instructor to audit the course. Such courses shall not count towards the credit requirements and shall not be reflected in the grade sheet. 
+Course Numbering System 
+Each course is referred to by a course code and title. 
+Course code for each course is a five alpha-numeric characters comprising of two alphabets followed by three numerals. An example numbering is shown below. 
+
+ 
+The alphabetical part of the course code represents the department offering the course while the numerical part of the course code provides level of the course, nature of the course and a unique identification of the course. 
+17. Grading and Performance Evaluation 
+Grading System 
+Depending upon the performance of the students, the instructor in-charge of the course, shall award a grade for the student. Each grade carries associated numeric points as given below. 
+Grades for Regular Courses 
+A+ 
+A 
+A- 
+B 
+B- 
+C 
+C- 
+D 
+F 
+FS 
+I 
+10 
+10 
+9 
+8 
+7 
+6 
+5 
+4 
+0 
+0 
+0 
+Grades for Thesis and Candidacy Examination 
+
+Grades for Audited Courses and Essential Physical Activity 
+
+The course/activity is said to be cleared if the student receives a grade other than FS, F and I. 
+All students shall appear in all examinations (including the mid-semester and end-semester examinations). Failure to appear in any examination will cause 0 (zero) marks to be awarded in that examination and the grading to be carried out accordingly. A student who fails to appear in any written examination (mid-semester or end-semester examination) due to genuine medical or unavoidable reasons may be permitted by the course instructor to take make-up examination subject to certification by the Institute doctor on the severity of the medical condition. The student should make a request for this purpose supported by all documents. Such a request shall reach the course instructor within two days of last date of mid-semester examination or end-semester examination (whichever exam is missed by the student). In exceptional circumstances, course instructors may also allow students to appear in the makeup examination to provide them with an additional chance to improve their performance. Students who are permitted to appear in the make-up examination shall be awarded FS grade. If the student fails to appear in the make-up examination as per the academic calendar, the FS grade is converted to regular grade. The make-up examination shall be used to substitute the marks of the examination missed by the student and the grading shall be carried out by the instructor as per the regular class grading. 
+F grade is given by the instructor when he/she is convinced that the student must repeat the course, including all lectures, labs, examinations etc. The student must repeat the course if it is a core or a professional core course. For other courses, the student can replace the course with another course of the same category. 
+I grade is given by the instructor when the student fails to complete the course and will require some extra time to finish the project work or assignment. I grade must be converted to a regular grade within one week of the end of the semester (last day of the last tierce examination). An unconverted I grade is automatically converted to F grade. 
+Students shall be awarded 'S' or 'F' grades in the audited courses and the same shall be reflected in the grade card or transcript of the student. However, grades of the audited courses shall not be considered in the SGPA/CGPA calculation. 
+Cumulative Grade Point Average (CGPA) and Semester Grade Point Average (SGPA) 
+The SGPA is a weighted sum of the associated numeric points earned by the student for each course registered in a particular semester with weights being the credit of the course. CGPA is the weighted sum of all courses in the program. The academic performance of a student is typically indicated by SGPA and CGPA. 
+For example, if the courses and corresponding credits registered for by a student in a semester and the numeric points obtained (corresponding to the grades) are as per the given table, the SGPA shall be computed as per the given formula. 
+
+CGPA is computed in the similar way except that the courses are taken across all semesters. While computing SGPA and CGPA, the rules of repetition of courses are followed. 
+The institute award CGPA on a scale of 10 (Ten) after the assessment of the students. The institute does not offer any formula for the conversion of CGPA to percentage or any other scale. However, wherever percentage is the norm, the CGPA of all IIT Bhilai graduates be notionally converted into percentage by multiplying the CGPA by a factor of 10 (Ten). For the purpose of employment or requirement of any external body, IIT Bhilai graduate having 6 (Six) CGPA and above be taken as First Class. 
+Evaluation System 
+All courses shall run for the entire semester (approximately 14 weeks). IIT Bhilai supports continuous evaluation of performance of students in various courses. Course instructor of a course is responsible for conducting written examinations, surprised/announced quizzes, home assignments, project works, lab assignments, presentations, interviews, oral examinations or any other method of evaluation. The weightage for each of these components shall be announced by the course instructor a-priori. Among such examination methods, the formal written examinations (mid-semester and end-semester examinations) shall be carried out as per the academic calendar of the Institute. The course instructor may choose the method of evaluation depending upon the nature of the course and shall make it known to the class in the beginning. 
+The academic calendar of the Institute shall reserve slots for mid-semester and end-semester examinations. The examinations shall be carried out only during this schedule. 
+Repetition of a Course 
+A student must repeat a course under the following conditions. 
+  When he/she receives an F grade. 
+  When the credits for the course expire after seven years of its validity. 
+  When the student desires to repeat the course to improve the grade. 
+When a course is repeated, all grades in the courses shall be reflected in the transcripts in the semester they are done (except FS and I which are transient grades and must be converted to other grades).  
+When a course is repeated, the last grade obtained will be considered in the computations of the CGPA. The SGPA computations shall include all such courses in the corresponding semesters. 
+The courses and the grades for the courses with the expired credits shall not be reflected in the final transcript. These shall not be included in the computation of CGPA after expiration. Such expired credits shall also not be considered cleared. 
+A student will also have a choice to repeat any other course voluntarily in case he/she wishes to improve the grade in that course.  
+Thesis Evaluation 
+Students shall be required to register for thesis credits as per the academic program structure. They must choose their supervisor(s) as early as possible, preferably prior to pre-registration of the second semester. In each semester with prescribed thesis requirements, the student is required to register for thesis credits, which will be evaluated on the semester basis. The thesis grades shall be given by the DUGC/DPGC convener.  
+Upon the thesis completion, the students shall submit a written thesis for wholesome evaluation, as per the institute norms, in consultation with the thesis supervisor. 
+The wholesome evaluation of the thesis shall be carried out by a wholesome thesis evaluation committee which shall make its recommendations of thesis acceptance to the academic senate via IUGC/IPGC and DUGC/DPGC. The student shall be required to make a presentation of the thesis work to the wholesome thesis evaluation committee. 
+18. PhD Program Structure 
+Each student registered for the PhD program shall go through various academic stages of the program which shall include the following. 
+  Course work, which shall be evaluated as per the course evaluation guidelines of the 
+Institute. 
+  Candidacy examination, which shall be carried out as per the academic calendar and shall be evaluated as per the guidelines of the Institute. 
+  Research seminars, one in each semester of the program after clearing candidacy examination. The seminars shall be evaluated by a departmental committee formed by the DPGC and shall be graded as per the guidelines of the Institute. The first research seminar in a regular semester after clearing the candidacy examination shall be termed as Research Proposal Seminar where the student shall make a presentation on the proposed thesis topic and on the state-of-the-art in that area. Just before the student proposes to complete the thesis, the student shall prepare a synopsis of the thesis and present in the seminar. The research seminar shall be part of the thesis evaluation procedure for the PhD candidates. 
+  Thesis submission and evaluation, which shall be carried out after the candidate submits the research thesis as per the prescribed procedure of the Institute by a duly formed committee of thesis examiners.  
+  Thesis Defense, which shall be carried out subsequent to the thesis evaluation. The thesis evaluation committee shall be formed as per the prescribed procedures of the Institute and it shall carry out the wholesome evaluation of the thesis by considering the examiner reports, candidates' response to the reports, modifications if carried out by the candidate in light of the suggestions of the examiners and any other inputs. The thesis evaluation committee shall make its recommendation on the acceptance of the thesis to academic senate via DPGC and IPGC. 
+Thesis Supervisor(s) 
+Each PhD student shall be required to choose a thesis supervisor (including one or more cosupervisor(s), if any) as early as possible in the program and definitely before the end of the first semester.  
+PhD candidates registered with Part-time External or Full-time External program shall also be required to have one external supervisor as per the prescribed procedure of the Institute. 
+Candidacy Examination 
+A PhD student will be required to take a candidacy examination in the very first available slot immediately after completing the course requirements. The objective of this candidacy exam is to evaluate the candidate's ability to carry out research and shall include the evaluation of the knowledge breadth of the student, including the research comprehension. The student must clear the candidacy examination by receiving a grade other than F and I. In case a student receives an F grade, he/she shall be required to take the candidacy examination in the next available slot. A failure to clear the candidacy examination in a maximum of two attempts shall cause an automatic termination of the PhD program and the candidate's registration may be downgraded to the Master's program or the candidate may be asked to leave the Institute based on the status evaluation of the candidate by IPGC. 
+19. Promotion and Discontinuation of Program 
+  Students are expected to complete their programs within the nominal duration. As they clear their courses, they are promoted to the next semester/year. 
+  A first year undergraduate student who could not clear at least 60% of the credits registered for will be required to repeat the entire first year irrespective of the reasons thereupon. 
+  The program of an MTech student who accumulates 18 or more thesis credits with F grade shall be terminated. 
+  The program of a PhD student who accumulates 24 or more thesis credits with F grade shall be terminated. 
+  The program of a PhD student who fails to clear a minimum of 24 credits out of the first 48 credits registered shall be terminated. 
+20. Credit Requirements of Various Programs 
+Credit requirements of a program covers courses from all or some of the five categories (i.e. core courses, professional core courses, departmental elective courses, open elective courses, creative art and liberal art courses). Students shall clear prescribed courses for their programs and earn prescribed credits. The residential requirements, nominal duration, normal load and credit requirements for each program are listed below. 
+Program 
+Minimum 	credit requirements 
+Normal load 
+Minimum 
+residential requirement 
+Nominal duration 
+BTech 
+240 
+30 credits in each regular semester 
+Residential program 
+4 Years 
+BTech (Honours) 
+(not an admission oriented program. A student in 
+BTech program can opt for conversion to 
+BTech (Honours). 
+264  
+(at least 18 must be towards thesis or towards specified courses in another discipline) 
+30 credits in each regular semester before conversion and 36 credits after conversion. 
+Residential program 
+4 Years 
+MSc 
+120 (comprising of at least 84 credits from courses and at least 24 credits from thesis) 
+30 credits in each regular semester 
+Residential program 
+21 Months 
+MTech 
+108 (comprising of at least 24 credits from courses and at least 48 credits from thesis) 
+24 credits during 
+Monsoon and 
+Winter semesters, and 12 credits during Summer semesters. 
+1 Regular 
+Semester 
+21 Months 
+PhD (fulltime/regular) 
+ 
+168 (192*) for students admitted after completing PG degree, comprising of at least 24 (48*) credits from courses and at least 108 credits from thesis) 
+30 (24 ) credits during Monsoon and Winter semesters. 
+1 Regular 
+Semester 
+3 (3.5*) Years 
+4.5  (5* ) 
+Years 
+
+* for those admitted after completing undergraduate degree 	   for part-time students. 
+In addition to the credit requirements mentioned in this table, the students in the BTech and BTech(Honours) program need to undergo the following. 
+1. Essential Physical Activity (EPA), of 1 credit. The students shall be given a grade in this activity. The grades however shall not count in the SGPA or CGPA computations. 
+2. NSS/NSO: Students have to spend a minimum of 120 hours in National Service Scheme (NSS) or National Sports Organization (NSO) activities and are encouraged to complete NSS/NSO activities within first four semesters.  
+21. Industrial Training and Fieldwork 
+Undergraduate students are encouraged to spend their summer on getting industrial training and doing fieldwork, especially in the summer months of their 2nd and 3rd year studentship. The objective of this training is primarily to supplement their knowledge to contribute to a live project and familiarize themselves with industry environment. 
+Postgraduate students are expected to do research during inter-semester break either on campus or by visiting a research organization in consultation with their thesis supervisor. 
+22. Scholarships, Fellowships and Awards 
+Institute supports several scholarships, fellowships and various forms of assistantships for deserving students. It further awards deserving candidates for their excellence in academics and various other activities in the institute.  
+Awards and Medals 
+Awards and medals at IIT Bhilai are recognitions given to students who have demonstrated outstanding performance or achievements in various fields of study, extracurricular activities, leadership skills. Awards and medals at IIT Bhilai are an important recognition of student achievements and serve as a source of inspiration and motivation for students to strive for excellence in their academic and personal pursuits. 
+Donor Awards 
+The following table depicts the various donor awards that are given to students of IIT Bhilai. 
+  
+S.N. 
+Name of Award and purpose 
+Eligibility Criteria 
+Selection Process 
+Benefits 
+1. 
+P. K. Jain 
+Memorial Award 
+for significant contribution towards the advancement of 
+the institute 
+A BTech student who has completed 4th semester. 
+An institutewide award committee shall evaluate all the 
+nominated candidates for the award. 
+Cash Award of Rs. 50,000/- along with a gold plated silver Medal. 
+2. 
+Geet Amal GhoshRoy Award for 
+   BTech 1st year student with a parental income 4.5 Lakhs or less. 
+   A student from the first semester would be chosen from the IIT Bhilai's entrance examination merit list who satisfies the income criteria. 
+   The second instalment of the award shall be payable in the second semester of study, provided that the same student obtains IIT Bhilai's CGPA rating of 8.0 or above at the end of the first semester. 
+An institutewide award committee shall evaluate all the 
+nominated candidates for the award. 
+ 
+Cash Award of Rs. 50,000/- awarded in two instalments. 
+3. 
+R P Singh Memorial Award for Leadership and
+Social Work 
+A BTech student who has completed 2nd semester of study in B Tech Program with CGPA at least 6.0. 
+An institutewide award 
+ committee 
+shall evaluate all the candidates for the award. 
+Cash Award of 
+Rs. 10,000/- (given in four instalments) along with a certificate 
+4. 
+Gayatri Devi 
+Leadership Award 
+A BTech student who has cleared 6 regular semesters at IIT Bhilai with no F grade in Department Core Courses and CGPA at least 7. 
+An institutewide award committee shall 
+evaluate all the nominated candidates for the award. 
+Cash Award of Rs. 11,000/- and a goldplated silver medal along with a certificate 
+5. 
+Alumni Association's 
+Young Researcher
+Award 
+   A BTech student typically do not receive any aid to register for conferences and workshops where they can present their papers. 
+   A maximum of 5 awards to be awarded each year. 
+An institutewide award committee shall 
+evaluate all the nominated candidates for the award. 
+Cash Award of Rs. 10,000/- and a certificate. 
+6. 
+K. P. Jain Higher Education Award 
+A BTech student who has cleared 7 regular semesters at IIT Bhilai with no F grade. 
+An institutewide award committee shall 
+evaluate all the nominated candidates for the award. 
+Cash Award of Rs. 51,000/- and a certificate. 
+  
+ 
+Convocation Awards 
+The following table depicts the various convocation awards that are given to graduating students of IIT Bhilai during the convocation ceremony. 
+S.No. 
+Name of Award 
+Eligibility Criteria 
+Selection Process 
+Benefits 
+1. 
+Institute 
+Gold 
+Medal  
+   BTech student who has secured the highest CGPA among all the outgoing students enrolled in the BTech program in any discipline, at the time of graduation, and 
+   The student is not debarred to get the award and does not have any F grade. 
+An institutewide award committee select the 
+student as 
+per eligibility criteria. 
+Gold medal and a 
+certificate during convocation. 
+2. 
+Senate's Award 
+   The student securing the highest CGPA in each discipline in their respective program at the time of graduation, and    The student is not debarred to get the award and does not have any F grade. 
+An institutewide award committee select the student as 
+per eligibility criteria. 
+A certificate during convocation. 
+3. 
+Director's 
+Gold 
+Medal  
+   The student with outstanding all-around performance among all the outgoing students enrolled in  BTech program in any discipline, at the time of graduation, and 
+   Do not have any F grade are eligible, provided the student is not debarred to get the award. 
+An institutewide award committee shall evaluate all the 
+nominated candidates for the award. 
+Gold medal and a 
+certificate during convocation ceremony. 
+4. 
+Director's 
+Gold 
+Medal  
+   The student with outstanding all-around performance among all the outgoing students enrolled in  MTech program in any discipline, at the time of graduation, and 
+   Do not have any F grade are eligible, provided the student is not debarred to get the award. 
+An institutewide award committee shall evaluate all the 
+nominated candidates for the award. 
+Gold medal and a 
+certificate during convocation ceremony. 
+5. 
+Director's 
+Gold 
+Medal 
+(Female) 
+   The student with outstanding all-around performance among all the outgoing female students enrolled in  BTech/BTech (Hons.)/MSc program in any discipline, at the time of 
+graduation, and 
+   Do not have any F grade are eligible, provided the student is not debarred to get the award. 
+An institutewide award committee shall evaluate all the 
+nominated candidates for the award. 
+Gold medal and a 
+certificate during convocation 
+ 
+SCHOLARSHIPS  Institute Scholarships  
+Institute scholarships at IIT Bhilai are scholarships that are awarded to its students to support their education. These scholarships are specifically designed for students studying at IIT Bhilai. Institute scholarships for IIT Bhilai students provide crucial financial support to students, enabling them to focus on their studies and pursue their educational goals without the burden of financial constraints. These scholarships also reflect the institute's commitment to supporting the education of the next generation of leaders and professionals. The following table depicts the institute scholarships that are awarded to students of IIT Bhilai. 
+
+S. 
+No.
+Name of Scholarshi
+p 
+Eligibility Criteria 
+Selection Process 
+Benefits 
+1. 
+Merit-cum-
+Means 
+(MCM) 
+Scholarship 
+MEANS: Combined parental income shall not exceed Rs. 5 Lakhs for General Category students and Rs. 6 Lakhs in case of OBC students.                                                    
+MERIT: All students of first semester, who are admitted to BTech program of IIT Bhilai. For other semesters, the student should have a CGPA of 6.0 or above and should have no F grade in the previous regular semester. 
+Other eligibility criteria:                         1. The student should belong to General or OBC category.                                                   
+  2. The student should not have been penalized because of unfair means or indiscipline by IIT Bhilai. A student is eligible for applying for the scholarship ONLY if he/she is eligible under ALL the eligibility criteria. 
+An 
+institutewide scholarsh ip and prizes committe
+e shall evaluate applicatio
+n of all the 
+eligible 
+candidate s for the award of scholarsh ip. 
+Scholars
+hip in the form of 
+full tuition fee waiver as well as pocket money of Rs. 1000/- per month for 10 months. 
+2. 
+Institute 
+Free 
+Studentship 
+(IFS) 
+Scholarship 
+MEANS: Combined parental income shall not exceed Rs. 5 Lakhs for General Category students and Rs. 6 Lakhs in case of OBC students.                                                    
+  MERIT: All students of first semester, who are admitted to BTech program of IIT Bhilai. For other semesters, the student should have a CGPA of 6.0 or above and should have no F grade in the previous regular semester. Other eligibility 
+criteria:                                                    
+1. The student should belong to General or OBC 
+category.                                                   
+2. The student should not have been penalized because of unfair means or indiscipline by IIT Bhilai. A student is eligible for applying for the scholarship ONLY if he/she is eligible under ALL the eligibility criteria. 
+An 
+institutewide scholarsh ip and 
+prizes 
+committe e shall evaluate applicatio
+n of all the 
+eligible 
+candidate s for the award of scholarsh ip. 
+Scholars
+hip in the form of 
+full tuition fee waiver. 
+3. 
+Institute 
+SC/ST 
+Scholarship 
+   All undergraduate students in SC and ST categories are 
+included.                                   
+   Parental income not to exceed Rs. 4.5 Lakhs per annum.   
+   CGPA of 6.0 is required. 
+An 
+institutewide scholarsh ip and prizes committe
+e shall evaluate applicatio
+n of all the 
+eligible 
+candidate s for the award of scholarsh ip. 
+Free messing and boarding (to the extent collected) and pocket money of Rs. 250/- per month. 
+ 
+Donor based Scholarships  
+Donor based scholarships at IIT Bhilai are scholarships that are awarded to its students by individuals, organizations, or businesses who donate funds to support their education. Donor based scholarships provide crucial financial support to students, enabling them to focus on their studies and pursue their educational goals without the burden of financial constraints. These scholarships also reflect the generosity of donors who are committed to supporting the education of the next generation of leaders and professionals. The following table depicts the donor-based scholarship that is awarded to students of IIT Bhilai. 
+S. 
+No
+Name of .Scholarship 
+ Eligibility Criteria 
+Selection Process 
+Benefits 
+1 
+GSTN-CSR 
+Scholarship for MSc students 
+MEANS: Combined parental income shall not exceed Rs. 5 
+Lakhs.                                                         
+MERIT: All students of first semester, who are admitted to MSc program of IIT Bhilai. For other semesters, the student should have a CGPA of 6.0 or above and should have no F grade in the previous regular semester (additionally in the summer semester, if applicable).  
+Other eligibility criteria: The student should not have been penalized because of unfair means or indiscipline by IIT 
+Bhilai.                                                         
+A student is eligible for applying for the scholarship ONLY if he/she is eligible under ALL the eligibility criteria. 
+An 
+institutewide scholarship and prizes committee shall evaluate application of all the eligible candidates for the award of scholarship 
+Scholarshi p of Rs. 12,000/- per year. The scholarship will be awarded in two equal 
+instalments 
+in 
+Monsoon and Winter semesters. 
+ Institute Fellowship to Postgraduate Students 
+1. Non-sponsored MTech students are paid fellowship for approximately 21 months by institute provided they have valid GATE score. 
+2. Ph.D. Students who are admitted in the regular category are paid fellowship for 4 years and likely to continue for another year with positive recommendation from the department. 
+Institute Fellowship in a semester shall not be provided to a student if he/she is not registered or receiving fellowship from elsewhere. All students who are offered Institute Fellowship by the institute are expected to devote 8 hours per week towards academic and administrative work (other than the research and course-work) assigned to them. 
+23. Plagiarism Policy 
+Definitions 
+  pla gia rism (noun \ 'pla-j?- ?ri-z?m \): the act of using another person's words or ideas without giving credit to that person 
+  pla gia rize (verb \ 'pla-j?-?riz \): to use the words or ideas of another person as if they were your own words or ideas 
+(http://www.merriam-webster.com/dictionary/plagiarize) 
+Students copying from each other or from any other sources (including Internet, books, monographs, research papers etc.) for their academic activities without giving proper reference to the original source falls under plagiarism. This defeats the purpose of doing academic activities which is to learn and grow academically and professionally. Performing academic activities by copying is counter-productive as students invest time and learn almost nothing. Plagiarism discourages hard work among students and faculty both. 
+Policy 
+At IIT Bhilai, plagiarism is strictly prohibited. A case of plagiarism will be dealt by DUGC/DPGC and could be referred to the institute wide disciplinary action committee; the committee, depending upon the severity of the case may give FS/F in the course, suspend the student for a certain period or may expel the student from the institute. A faculty has the right to check the students' submission at any time and take necessary action. It is the responsibility of students to ensure originality of their work, be aware of this policy and abide by it. 
+	2 
+ 
+
+	2 
+ 
+
+
+

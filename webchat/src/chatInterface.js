@@ -111,12 +111,17 @@ export default function MiniDrawer() {
   const [isFocused, setIsFocused] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [themeType, setThemeType] = useState('light');
+  const [isFirstRes, setIsFirstRes] = useState(true);
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   useEffect(() => {
     setThemeType(() => { return prefersDarkMode ? 'dark' : 'light' });
   }, [prefersDarkMode]);
+  useEffect(() => {
+    let ws = io('http://localhost:5000');
+    setSocket(ws);
+  }, []);
 
   const Usertheme = React.useMemo(
     () =>
@@ -132,74 +137,39 @@ export default function MiniDrawer() {
   );
 
   useEffect(() => {
-    let ws = io('http://localhost:5000');
-    setSocket(ws);
-
-    ws.on('response', (data) => {
+    const handleResponse = (data) => {
       const newChunk = data.message;
-      // messageBuffer.current += newChunk;
-
-      setMessages((prevMessages) => {
-        const lastMessage = prevMessages[1][prevMessages[1].length - 1];
-        let updatedMessages = [...prevMessages];
-        if (lastMessage && lastMessage.sender === "server") {
-          const updatedLastMessage = { ...lastMessage, content: lastMessage.content + newChunk };
-          updatedMessages[1] = updatedMessages[1].slice(0, -1).concat(updatedLastMessage);
-        } else {
-          updatedMessages[1].push({ content: newChunk, sender: "server" });
-        }
-        return updatedMessages;
+      // setMessages((prevMessages) => {
+      //   // const lastMessage = prevMessages[prevMessages.length - 1];
+      //   // if (lastMessage && lastMessage.sender === "server") {
+      //   //   // Append to the last message if it's from the server
+      //   //   const updatedLastMessage = { ...lastMessage, content: lastMessage.content + newChunk };
+      //   //   return [...prevMessages.slice(0, -1), updatedLastMessage];
+      //   // } else {
+      //     // Otherwise, create a new message object
+      //     return [...prevMessages, { content: newChunk, sender: "server" }];
+      //   // }
+      // });
+      console.log(messages)
+      // if(messages === null)
+        // messages = []
+      messages && setMessages(prevMessages => {
+        const newMessages = [...prevMessages];
+        newMessages[1] = [...newMessages[1],{ content: newChunk, sender: "server" }];
+        return newMessages;
       });
-    });
-    // ws.onclose = function (event) {
-    //   if (event.wasClean) {
-    //     console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-    //   } else {
-    //     // e.g. server process killed or network down
-    //     // event.code is usually 1006 in this case
-    //     console.log('[close] Connection died');
-    //     reconnect();
-    //   }
-    // };
-
-    // function reconnect() {
-    //   let attempts = 0;
-    //   const maxAttempts = 120; // Maximum number of attempts (2 minutes)
-    //   const delay = 2000; // Delay between attempts (1 second)
-
-    //   const tryReconnect = () => {
-    //     if (attempts >= maxAttempts) {
-    //       console.log('[close] Maximum number of reconnection attempts reached');
-    //       return;
-    //     }
-
-    //     const ws = new WebSocket('ws://localhost:5000');
-    //     setSocket(ws);
-
-    //     ws.onopen = () => {
-    //       console.log('[open] Connection reestablished');
-    //     };
-
-    //     ws.onclose = (event) => {
-    //       if (event.wasClean) {
-    //         console.log(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
-    //       } else {
-    //         console.log('[close] Connection died');
-    //         attempts++;
-    //         setTimeout(tryReconnect, delay);
-    //       }
-    //     };
-    //   };
-
-    //   setTimeout(tryReconnect, delay);
-    // }
-    // Clean up the WebSocket connection on unmount
+      console.log(messages)
+    };
+  
+    socket && socket.on('response', handleResponse);
+  
     return () => {
       if (socket) {
-        socket.close();
+        socket.off('response', handleResponse);
       }
     };
-  }, []);
+  }, [socket]); // Add dependencies if needed
+  
 
 
   const handleDrawerOpen = () => {
@@ -218,10 +188,19 @@ export default function MiniDrawer() {
       };
       if (messages.length === 0) {
         const id = new Date().toISOString();
-        setMessages([id, [message]]);
+        setMessages(prevState => {
+          return [id, [message]]
+        });
+        
       }
       else {
-        messages[1].push(message);
+        setMessages(prevMessages => {
+          const newMessages = [...prevMessages];
+          newMessages[1] = [...newMessages[1], message];
+          return newMessages;
+        });
+        
+        // messages[1].push({ content: '', sender: "server" });
       }
       setInputValue("");
       socket.emit('message', inputValue);
@@ -501,10 +480,10 @@ export default function MiniDrawer() {
                   <Box
                     sx={{ wordBreak: "break-word", textWrap: "wrap" }}
                     key={index}
-                    className={`p-2 rounded-lg font-google-sans break-words
+                    className={`p-2 rounded-lg font-google-sans break-words 
                              ${message.sender === "user"
                         ? "bg-blue-500 text-white dark:bg-blue-500 max-w-fit"
-                        : "dark:text-white max-w-full"
+                        : `${themeType==='light'?'text-black':'text-white'} max-w-full`
                       }`}
                   >
                     {renderMessageContent(message.content)}
@@ -533,7 +512,7 @@ export default function MiniDrawer() {
           className="flex justify-center items-center py-2"
         >
           <Box className={`flex w-full max-w-screen-md rounded-3xl ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
-            }shadow-gray-400 dark:bg-gray-700 dark:text-white dark:border-gray-600`}>
+            }shadow-gray-400 dark:bg-gray-700 text-white dark:text-white dark:border-gray-600`}>
             <TextareaAutosize
               ref={inputValueRef}
               placeholder="Enter your message..."
@@ -566,8 +545,8 @@ export default function MiniDrawer() {
             />
             <Box className={`flex  items-end pb-4 pl-1 pr-3 space-x-4 bg-inherit ${inputValue.split("\n").length > 1 ? "rounded-xl" : "rounded-full"
               }`} >
-              <FaMicrophone onClick={handleMicrophoneClick} className="h-6 w-6 hover:cursor-pointer hover:text-green-600 dark:text-white text-black" color={isListening ? 'red' : ''} />
-              <BsFillSendFill onClick={sendMessage} className="h-6 w-6  dark:text-white text-black hover:cursor-pointer hover:text-green-600" />
+              <FaMicrophone onClick={handleMicrophoneClick} className="h-6 w-6 hover:cursor-pointer hover:text-green-600 text-white text-black" color={isListening ? 'red' : ''} />
+              <BsFillSendFill onClick={sendMessage} className="h-6 w-6  text-white  hover:cursor-pointer hover:text-green-600" />
             </Box>
           </Box>
         </Box>
