@@ -56,7 +56,7 @@ def get_LL_response(query: str, context: List[str], llm: Ollama) -> str:
         prompt = build_prompt(query, context)
         url = 'http://localhost:11434/api/generate'
         data = {
-            "model": "BhilaiGPT_3.95",
+            "model": "BhilaiGPT_2.0",
             "prompt": prompt,
             "stream": False
         }
@@ -78,7 +78,7 @@ def get_LL_response(query: str, context: List[str], llm: Ollama) -> str:
 def main(query, collection_name: str = "documents_collection", persist_directory: str = ".") -> None:
 
     # Instantiate Ollama
-    llm = Ollama(model="BhilaiGPT_2.0", request_timeout=300.0)
+    llm = Ollama(model="BhilaiGPT_2.0", request_timeout=120.0)
     print("Ollama model instantiated.")
 
     # Instantiate a persistent chroma client in the persist_directory.

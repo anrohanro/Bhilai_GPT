@@ -4,3 +4,4 @@ tqdm
 llama_index.llms.ollama
 flask
 flask_socketio
+requests
